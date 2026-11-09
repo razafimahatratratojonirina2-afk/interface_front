@@ -1,0 +1,131 @@
+/* Classes réutilisables par plusieurs sections */
+.section-tag {
+  display: inline-block;
+  font: 700 11px 'Nunito', sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid rgba(255, 45, 120, .5);
+  padding: 4px 12px;
+  border-radius: 99px;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .04);
+}
+
+.card h3 {
+  font-size: 19px;
+  color: var(--pink);
+  margin-bottom: 6px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.dk .card {
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: none;
+}
+
+.dk .card h3 {
+  color: #ffffff;
+}
+
+.act {
+  padding: 0;
+  overflow: hidden;
+}
+
+.act .b {
+  padding: 18px;
+}
+
+.act h3 {
+  color: var(--dark);
+}
+
+.ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+
+.im {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.im img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.round {
+  border-radius: 24px;
+}
+
+.logo-im {
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.logo-im img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff2d78, #ff6a9a);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 99px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(255, 45, 120, .3);
+}
+
+
+.list div {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.list b {
+  color: #ffffff;
+  display: block;
+}
+
+.list small {
+  font-size: 14px;
+  color: var(--txt-muted);
+}

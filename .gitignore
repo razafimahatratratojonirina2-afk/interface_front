@@ -1,0 +1,23 @@
+# Dépendances et build
+node_modules
+dist
+dist-ssr
+.vite
+
+# Netlify
+.netlify
+
+# Variables d'environnement
+.env
+.env.*
+!.env.example
+
+# Logs et fichiers système
+*.log
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/*
+!.vscode/extensions.json
+.idea

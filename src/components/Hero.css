@@ -1,0 +1,118 @@
+.hero-main {
+  position: relative;
+  background-color: #110c0e;
+
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 45, 120, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(120, 20, 50, 0.25) 0%, transparent 50%),
+    linear-gradient(135deg, #1c1416 0%, #0d090a 100%);
+  background-blend-mode: screen;
+  overflow: hidden;
+  padding: 80px 0;
+  color: #d9cfd1;
+}
+
+
+.hero-main .hero-title {
+  color: #ffffff;
+}
+
+.hero-main .hero-description {
+  color: #d9cfd1;
+}
+
+.hero-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media(max-width: 800px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-tag {
+  display: inline-block;
+  font: 700 11px 'Nunito', sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid rgba(255,45,120,.5);
+  padding: 4px 12px;
+  border-radius: 99px;
+  margin-bottom: 14px;
+}
+
+.hero-title {
+  font-size: clamp(38px, 6vw, 60px);
+  margin-bottom: 18px;
+}
+
+.highlight-pink {
+  color: var(--pink);
+}
+
+.hero-description {
+  font-size: 15px;
+  color: var(--txt);
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-pink {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff2d78, #ff6a9a);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 99px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(255, 45, 120, .3);
+}
+
+.btn-secondary-outline {
+  display: inline-block;
+  background: none;
+  border: 1px solid #6b5a5e;
+  color: var(--txt);
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 99px;
+  text-decoration: none;
+}
+.btn-secondary-outline:hover {
+  background: rgba(255, 45, 120, 0.15);
+  border-color: var(--pink);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 45, 120, 0.2);
+  transform: translateY(-2px);
+}
+
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 45, 120, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

@@ -1,0 +1,52 @@
+.about-section {
+  padding: 70px 0;
+}
+
+.about-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media(max-width: 800px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-text {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.about-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .04);
+}
+
+.about-card.card-full {
+  grid-column: 1 / -1;
+}
+
+.card-title {
+  font-size: 19px;
+  color: var(--pink);
+  margin-bottom: 6px;
+}
+
+.card-desc {
+  margin: 0;
+  font-size: 14px;
+}

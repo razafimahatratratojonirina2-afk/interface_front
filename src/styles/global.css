@@ -1,0 +1,84 @@
+/* Variables, reset et classes utilitaires utilisées partout */
+:root {
+  --pink: #ff2d78;
+  --pink-btn: #ff4d6d;
+  --dark: #1c1416;
+  --dark-sec: #150f11;
+  --bg: #fdf8f6;
+  --card: #ffffff;
+  --txt: #3b3235;
+  --txt-muted: #d9cfd1;
+  --line: #f0e4e2;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--txt);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.w {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.sec {
+  padding: 70px 0;
+}
+
+.dk {
+  background: var(--dark);
+  color: var(--txt-muted);
+}
+
+.dk h1, .dk h2, .dk h3 {
+  color: #ffffff;
+}
+
+.p {
+  color: var(--pink);
+}
+
+.tag {
+  display: inline-block;
+  font: 700 11px 'Nunito', sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid rgba(255, 45, 120, .5);
+  padding: 4px 12px;
+  border-radius: 99px;
+  margin-bottom: 14px;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media(max-width: 800px) {
+  .two {
+    grid-template-columns: 1fr;
+  }
+}

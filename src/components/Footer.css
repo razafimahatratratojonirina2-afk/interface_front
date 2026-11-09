@@ -1,0 +1,23 @@
+.site-footer {
+  background-color: #ffffff;
+  padding: 40px 20px 25px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  width: 100%;
+}
+
+.footer-logo-container {
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  max-height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-copyright {
+  color: #888888;
+  font-size: 13px;
+  margin: 0;
+}
